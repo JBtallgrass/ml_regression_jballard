@@ -141,20 +141,33 @@ Please refer to the detailed [Reflections.md](reflections.md) for section-based 
 
 ### Assignment Requirements
 
-1. Introduction
-2. Data Loading & Inspection
-3. Data Cleaning & Preparation
-4. Feature Selection & Engineering
-5. Model Training & Evaluation
-6. Model Comparison
-7. Reflections
-8. Peer Review
+1. Create a GitHub repository named **ml_regression_yourname**.  
+2. Upload your dataset to a **data folder** in the repository.  
+3. Develop a Jupyter Notebook (regression_yourname.ipynb) structured as outlined above.  
+4. Complete and write reflections for each section as you work.
+5. Write a **README.md** summarizing your project, dataset, and findings (see below).
+6. Review a classmate’s project and provide feedback in peer_review.md (see below).
 
 ---
 
+### Peer Review (Required)
+
+Review one other GitHub repository and provide feedback on:
+
+1. Clarity & Organization (Is the notebook structured and easy to follow?)
+1. Feature Selection & Justification (Do the chosen features make sense given the objectives?)
+1. Model Performance & Comparisons (Are the results and comparisons clearly explained?)
+1. Reflection Quality (Are insights well thought out?)
+
+**Submission**: Submit a short peer review document in your own repository titled peer_review.md.  
+The peer review must contain a **clickable Markdown link to the notebook (.ipynb) file reviewed** along with your personal, well-organized and presented 4-pont review.
+Provide specifics - both positive and constructive feedback.
+Suggest improvements where possible and explain why a different choice might be useful as well.
+Focus on actionable suggestions that the author could realistically implement.
+
 ## Submission Checklist
 
-- [x] Jupyter Notebook: `ml-04-midterm-jballard.ipynb`
+- [x] Jupyter Notebook: `ml_regression_jballard.ipynb`
 - [x] Reflections: `Reflections.md`
 - [x] README: This file
 - [x] Dataset in `data/` folder
@@ -167,3 +180,5 @@ Please refer to the detailed [Reflections.md](reflections.md) for section-based 
 - 📘 [Notebook Preview](ml-04-midterm-jballard.ipynb)  
 - ✍️ [Reflections (Markdown)](Reflections.md)  
 - 🧑‍🤝‍🧑 [Peer Review](peer_review.md)
+
+---
