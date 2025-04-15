@@ -52,11 +52,11 @@ I invite you to explore my GitHub repository, [jbtallgrass](https://github.com/J
 
 ## Project Overview
 
-Businesses and organizations must understand the relationships between different factors to make better decisions.
+Project Title: PricePoint: A Machine Learning Approach to Predicting Housing Prices with Feature-Rich Regression Models
 
-Regression analysis helps identify and quantify these relationships between numerical features, providing insights that can be used for forecasting and decision-making.
+Develop and evaluate regression models to predict the sale price of houses using features such as location, size, and year built. The goal is to assess which models generalize best and to interpret which features most influence housing value.
 
-This project demonstrates your ability to apply regression modeling techniques to a real-world dataset. You will:
+This project demonstrates my ability to apply regression modeling techniques to a real-world dataset. I will load:
 
 - Load and explore a dataset.
 - Choose and justify features for predicting a target variable.
