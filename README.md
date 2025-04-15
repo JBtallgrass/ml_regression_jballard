@@ -57,6 +57,7 @@ Businesses and organizations must understand the relationships between different
 Regression analysis helps identify and quantify these relationships between numerical features, providing insights that can be used for forecasting and decision-making.
 
 This project demonstrates your ability to apply regression modeling techniques to a real-world dataset. You will:
+
 - Load and explore a dataset.
 - Choose and justify features for predicting a target variable.
 - Train a regression model and evaluate performance.
@@ -67,10 +68,12 @@ This project demonstrates your ability to apply regression modeling techniques t
 ---
 
 ## Dataset Used
+
 🥇 🏡 Housing Prices Dataset
 
-Housing Prices Dataset (Predict home values based on features like square footage and location)   
-   - [Kaggle Housing Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
+Housing Prices Dataset (Predict home values based on features like square footage and location)
+
+- [Kaggle Housing Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
 
 Why: It provides the richest feature set, requires robust preprocessing, and allows you to explore regularization, ensembling, and interpretability. It mirrors the messiness and opportunities you'd face in real-world applied machine learning.
 
@@ -84,14 +87,14 @@ Please refer to the detailed [Reflections.md](reflections.md) for section-based 
 
 ## Goals
 
-- 
-
 ---
 
 ## Data Source
 
-- **Housing Prices Dataset** (Predict home values based on features like square footage and location)   
-   - [Kaggle Housing Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
+- **Housing Prices Dataset** (Predict home values based on features like square footage and location)
+
+- [Kaggle Housing Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
+
 ---
 
 ## Technologies Used
