@@ -90,9 +90,11 @@ Please refer to the detailed [Reflections.md](reflections.md) for section-based 
 
 Summarize reflections HERE
 
-### 📊 Model Performance Comparison Table
+### 📊 Model Performance Comparison
 
-![Model Comparison](images/overlayed_model_performance.png)
+#### 📊 Interactive Model Performance Chart
+
+👉 [Click here to explore the interactive chart](plots/model_performance_plot.html)
 
 | Model                              | R² Score | MAE       | RMSE      |
 |-----------------------------------|----------|-----------|-----------|

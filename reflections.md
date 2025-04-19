@@ -48,3 +48,7 @@ After running the initial model, I asked an AI assistant what else I could do in
 | Manual Linear Regression           | 0.8200   | 3500.12   | 4700.45   |
 | Linear Regression (Pipeline 1)     | 0.8400   | 3300.78   | 4400.29   |
 | Polynomial Regression (Pipeline 2) | 0.8800   | 3100.45   | 4200.67   |
+
+### 📊 Interactive Model Performance Chart
+
+👉 [Click here to explore the interactive chart](plots/model_performance_plot.html)
