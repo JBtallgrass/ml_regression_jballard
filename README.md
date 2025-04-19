@@ -93,7 +93,7 @@ Summarize reflections HERE
 
 ### 📊 Model Performance Comparison
 
-![Model performance Comparision](plots\overlayed_model_performance.png)
+![Model Performance Comparision](plots\overlayed_model_performance.png)
 
 | Model                              | R² Score | MAE       | RMSE      |
 |-----------------------------------|----------|-----------|-----------|
@@ -103,7 +103,7 @@ Summarize reflections HERE
 
 #### 📊 Interactive Model Performance Chart
 
-👉 [Click here to explore the interactive chart](plots/model_performance_plot.html)
+👉 [Click here to explore the interactive chart](images/model_performance_plot.html)
 
 ---
 
