@@ -41,7 +41,7 @@ After running the initial model, I asked an AI assistant what else I could do in
 
 ### 📊 Model Performance Comparison
 
-![Model Comparison](images/overlayed_model_performance.png)
+![Model Comparison](plots/overlayed_model_performance.png)
 
 | Model                              | R² Score | MAE       | RMSE      |
 |-----------------------------------|----------|-----------|-----------|
@@ -51,4 +51,4 @@ After running the initial model, I asked an AI assistant what else I could do in
 
 ### 📊 Interactive Model Performance Chart
 
-👉 [Click here to explore the interactive chart](model_performance_plot.html)
+👉 [Click here to explore the interactive chart](plots/model_performance_plot.html)

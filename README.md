@@ -48,6 +48,7 @@ I invite you to explore my GitHub repository, [jbtallgrass](https://github.com/J
   - [Dataset Used](#dataset-used)
   - [Project Findings](#project-findings)
     - [📊 Model Performance Comparison](#-model-performance-comparison)
+      - [📊 Interactive Model Performance Chart](#-interactive-model-performance-chart)
   - [Goals](#goals)
   - [Data Source](#data-source)
   - [Technologies Used](#technologies-used)
@@ -92,9 +93,7 @@ Summarize reflections HERE
 
 ### 📊 Model Performance Comparison
 
-#### 📊 Interactive Model Performance Chart
-
-👉 [Click here to explore the interactive chart](plots/model_performance_plot.html)
+![Model performance Comparision](plots\overlayed_model_performance.png)
 
 | Model                              | R² Score | MAE       | RMSE      |
 |-----------------------------------|----------|-----------|-----------|
@@ -102,6 +101,9 @@ Summarize reflections HERE
 | Linear Regression (Pipeline 1)     | 0.8400   | 3300.78   | 4400.29   |
 | Polynomial Regression (Pipeline 2) | 0.8800   | 3100.45   | 4200.67   |
 
+#### 📊 Interactive Model Performance Chart
+
+👉 [Click here to explore the interactive chart](plots/model_performance_plot.html)
 
 ---
 
