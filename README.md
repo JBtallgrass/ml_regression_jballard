@@ -103,7 +103,7 @@ Summarize reflections HERE
 
 #### 📊 Interactive Model Performance Chart
 
-👉 [Click here to explore the interactive chart](images/model_performance_plot.html)
+👉 [Interactive Dashboard](https://.github.io/your-repo/model_performance_plot.html)
 
 ---
 
