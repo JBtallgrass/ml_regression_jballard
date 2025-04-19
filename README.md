@@ -2,113 +2,60 @@
 
 ![Banner](images/banner.png)
 
-## 🧑‍💼 Jason A. Ballard  
+## Jason A. Ballard
 
 ### Instructional Systems Specialist | Data Scientist | Data and AI Officer | Data Literacy Advocate | Educator in Professional Military Education
 
 Welcome! I'm Jason A. Ballard, an experienced leader in data and AI integration. I currently serve as the Data and AI Officer for the US Army Combined Arms Center at Fort Leavenworth, Kansas. My work bridges data science, AI strategy, and higher education, focusing on transforming decision-making through data literacy and innovation.
 
-I invite you to explore my GitHub repository, [jbtallgrass](https://github.com/JBtallgrass?tab=repositories), where I share insights, tools, and resources focused on data literacy and advanced analytics in educational contexts. My projects emphasize practical solutions, open collaboration, and a commitment to enhancing data accessibility across teams.
-
-### 🔑 Key Areas of Focus
-
-- **Data Strategy & Governance**: Developing frameworks that promote data-driven decision-making and cross-departmental data sharing.  
-- **AI & Analytics**: Leveraging data analytics and GenAI to unlock insights and drive transformational initiatives within the Army University.  
-- **Data Literacy & Education**: Equipping leaders and students with data literacy skills critical for today's complex, data-rich environments.  
-
-📍 **LinkedIn**: [Jason A. Ballard](https://www.linkedin.com/in/jasonaballard)  
-📍 **GitHub**: [jbtallgrass](https://github.com/JBtallgrass)
-
----
-
-## Applied Machine Learning Final Project: Regression Analysis
-
-### Jason Ballard
-
-#### Basehor, Kansas (CDT)
-
-#### April 16, 2025  
-
-> 📁 Submission: GitHub Repository with Jupyter Notebook
-
----
+Explore my GitHub repository, [jbtallgrass](https://github.com/JBtallgrass?tab=repositories), where I share projects focused on data literacy, machine learning, and applied analytics. My work emphasizes practical use cases, thoughtful reflection, and building skills that scale.
 
 ## ⚡ TL;DR
 
-- 🔍 Goal: Predict medical charges based on personal and lifestyle factors.
-- 🛠️ Tools: Python, Pandas, Scikit-Learn, Plotly, GitHub Pages.
-- 🔬 Process: Cleaned and explored the data, engineered features, built and compared regression models (manual, pipeline, and polynomial).
-- 📈 Best Model: Pipeline 2 (Polynomial Regression) achieved the highest R² and lowest error.
-- 📊 Visualization: Static and interactive charts comparing model performance.
-- 🌐 Bonus: Hosted the interactive Plotly chart via GitHub Pages to make results explorable.
+- Goal: Predict medical charges based on personal and lifestyle factors.
+- Tools: Python, Pandas, Scikit-Learn, Plotly, GitHub Pages.
+- Process: Data cleaning, feature engineering, multiple regression models.
+- Best Model: Polynomial Regression (Pipeline 2) performed best overall.
+- Bonus: Interactive Plotly chart hosted with GitHub Pages.
 
-## 📚 Table of Contents
-
-- [Applied Machine Learning Final](#applied-machine-learning-final)
-  - [🧑‍💼 Jason A. Ballard](#-jason-a-ballard)
-    - [Instructional Systems Specialist | Data Scientist | Data and AI Officer | Data Literacy Advocate | Educator in Professional Military Education](#instructional-systems-specialist--data-scientist--data-and-ai-officer--data-literacy-advocate--educator-in-professional-military-education)
-    - [🔑 Key Areas of Focus](#-key-areas-of-focus)
-  - [Applied Machine Learning Final Project: Regression Analysis](#applied-machine-learning-final-project-regression-analysis)
-    - [Jason Ballard](#jason-ballard)
-      - [Basehor, Kansas (CDT)](#basehor-kansas-cdt)
-      - [April 16, 2025](#april-16-2025)
-  - [⚡ TL;DR](#-tldr)
-  - [📚 Table of Contents](#-table-of-contents)
-  - [Project Overview](#project-overview)
-  - [Dataset Used](#dataset-used)
-  - [Project Findings](#project-findings)
-    - [Reflections Summary](#reflections-summary)
-    - [📊 Model Performance Comparison](#-model-performance-comparison)
-      - [📊 Interactive Model Performance Chart](#-interactive-model-performance-chart)
-  - [Goals](#goals)
-  - [Data Source](#data-source)
-  - [Technologies Used](#technologies-used)
-  - [Key Features](#key-features)
-  - [Setup and Requirements](#setup-and-requirements)
-  - [Project Structure](#project-structure)
-  - [Final Overview: The Full Data Flow](#final-overview-the-full-data-flow)
-    - [Assignment Requirements](#assignment-requirements)
-    - [Peer Review (Required)](#peer-review-required)
-  - [Submission Checklist](#submission-checklist)
-  - [Links](#links)
+---
 
 ---
 
 ## Project Overview
 
-Project Title:
-This project demonstrates my ability to apply regression modeling techniques to a real-world dataset. I will load:
+This project demonstrates my ability to apply regression modeling techniques to a real-world dataset. Tasks included:
 
-- Load and explore a dataset.
-- Choose and justify features for predicting a target variable.
-- Train a regression model and evaluate performance.
-- Compare multiple regression approaches.
-- Document your work in a structured Jupyter Notebook.
-- Conduct a peer review of a classmate's project.
+- Loading and exploring a dataset.
+- Feature selection and engineering.
+- Model training and evaluation.
+- Comparing manual, pipeline, and polynomial regression.
+- Hosting results with GitHub Pages.
 
 ---
 
 ## Dataset Used
 
-🥇 🏡
+Medical Costs Dataset (Predict insurance charges based on age, BMI, smoking status)
+![Medical Cost Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance)
 
-Why:
+Medical cost dataset containing personal and lifestyle variables like age, BMI, children, smoker status, and region.
 
 ---
 
 ## Project Findings
 
-Please refer to the detailed [Reflections.md](reflections.md) for section-based insights, observations, and reflections captured throughout the modeling process.
+Please refer to the detailed [Reflections.md](reflections.md) file for full insights.
 
 ### Reflections Summary
 
-This project pushed me to move beyond basic model-building and really explore how thoughtful preprocessing, feature engineering, and evaluation shape the outcome. I started with a clean dataset and gradually refined my approach—clipping outliers, log-transforming skewed variables, scaling features, and creating new ones like `bmi_smoker` to reflect real-world health risks. Each step added something valuable, and I saw measurable improvements in performance. Pipeline 2, which included polynomial features, gave the strongest results—proving that complexity can pay off when applied with purpose.
+This project pushed me to move beyond basic model-building and explore how thoughtful preprocessing, feature engineering, and evaluation shape the outcome. I refined the data through clipping, scaling, and feature creation (`bmi_smoker`)—and saw real gains in performance. Pipeline 2 (Polynomial Regression) proved most effective.
 
-Beyond the modeling itself, I leaned into experimentation and exploration. I circled back to tweak, re-run, and test new ideas constantly. One of my favorite side quests was setting up GitHub Pages to host an interactive Plotly chart—a first for me, and a big step in sharing my work in a more engaging way. I learned that good machine learning isn’t just about algorithms—it’s about asking better questions, visualizing outcomes, and communicating insights clearly.
+The side quest of hosting an interactive chart via GitHub Pages taught me how to share results in a more accessible, visual way. For me, machine learning is about experimentation, iteration, and clarity—and this project brought all of that together.
 
-### 📊 Model Performance Comparison
+### Model Performance Comparison
 
-![Model Performance Comparision](images\overlayed_model_performance.png)
+![Model Performance Comparision](images/overlayed_model_performance.png)
 
 | Model                              | R² Score | MAE       | RMSE      |
 |-----------------------------------|----------|-----------|-----------|
@@ -116,56 +63,63 @@ Beyond the modeling itself, I leaned into experimentation and exploration. I cir
 | Linear Regression (Pipeline 1)     | 0.8400   | 3300.78   | 4400.29   |
 | Polynomial Regression (Pipeline 2) | 0.8800   | 3100.45   | 4200.67   |
 
-#### 📊 Interactive Model Performance Chart
+### Interactive Model Performance Chart
 
-👉 [![Model Performance](images/model_metrics_preview.png)](https://jbtallgrass.github.io/ml_regression_jballard/model_performance_plot.html)
+👉 [View Interactive Chart](https://jbtallgrass.github.io/ml_regression_jballard/model_performance_plot.html)
 
 ---
 
 ## Goals
 
+Apply machine learning regression techniques to predict real-world outcomes using structured and transparent methods.
+
 ---
 
 ## Data Source
+
+Data from Kaggle: [Medical Cost Personal Dataset](https://www.kaggle.com/mirichoi0218/insurance)
 
 ---
 
 ## Technologies Used
 
 - Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
+- Plotly (for interactive visualization)
+- GitHub & GitHub Pages
 - Jupyter Notebook
-- Git & GitHub
+- AI Assistants
 
 ---
 
 ## Key Features
 
-- End-to-end ML workflow
-- Label encoding for categorical data
-- Stratified sampling for balanced class distribution
-- Model comparison: Decision Tree vs. Random Forest
-- Evaluation using Accuracy, Precision, Recall, F1-Score
+- End-to-end regression modeling pipeline
+- Label encoding and feature engineering
+- Evaluation using R², MAE, RMSE
+- Comparison of multiple model approaches
+- Interactive results via Plotly + GitHub Pages
 
 ---
 
 ## Setup and Requirements
 
 1. Clone the repository
-2. Set up a virtual environment  
-3. Run `pip install -r requirements.txt`  
-4. Launch the Jupyter Notebook
+2. Set up a virtual environment
+3. Run `pip install -r requirements.txt`
+4. Launch the Jupyter Notebook and run the project
 
 ---
 
 ## Project Structure
 
 ```plaintext
-├── data/                           # Dataset folder
-├── images/                         # Banner and visualizations
-├── ml-04-midterm-jballard.ipynb    # Main notebook
-├── README.md                       # Project overview and summary
-├── Reflections.md                  # All reflections (linked in README)
-├── peer_review.md                  # Your review of a peer project
+├── data/                          # Dataset
+├── images/                        # Visualizations
+├── ml_regression_jballard.ipynb  # Main notebook
+├── README.md                     # Project overview
+├── Reflections.md                # Full project reflections
+├── peer_review.md                # Peer feedback document
+├── docs/                         # GitHub Pages chart hosting
 ```
 
 ---
@@ -174,34 +128,29 @@ Beyond the modeling itself, I leaned into experimentation and exploration. I cir
 
 ### Assignment Requirements
 
-1. Create a GitHub repository named **ml_regression_yourname**.  
-2. Upload your dataset to a **data folder** in the repository.  
-3. Develop a Jupyter Notebook (regression_yourname.ipynb) structured as outlined above.  
-4. Complete and write reflections for each section as you work.
-5. Write a **README.md** summarizing your project, dataset, and findings (see below).
-6. Review a classmate’s project and provide feedback in peer_review.md (see below).
+1. Create a GitHub repo named `ml_regression_jballard`
+2. Upload your dataset to a `data/` folder
+3. Build a structured regression notebook
+4. Write reflections for each section
+5. Submit a summary README and peer review file
+
+### Peer Review
+
+Review a classmate’s repository and reflect on:
+
+- Clarity & structure
+- Feature selection
+- Model performance and justification
+- Quality of reflections and takeaways
+
+Submit a written peer review (`peer_review.md`) with actionable feedback.
 
 ---
-
-### Peer Review (Required)
-
-Review one other GitHub repository and provide feedback on:
-
-1. Clarity & Organization (Is the notebook structured and easy to follow?)
-1. Feature Selection & Justification (Do the chosen features make sense given the objectives?)
-1. Model Performance & Comparisons (Are the results and comparisons clearly explained?)
-1. Reflection Quality (Are insights well thought out?)
-
-**Submission**: Submit a short peer review document in your own repository titled peer_review.md.  
-The peer review must contain a **clickable Markdown link to the notebook (.ipynb) file reviewed** along with your personal, well-organized and presented 4-pont review.
-Provide specifics - both positive and constructive feedback.
-Suggest improvements where possible and explain why a different choice might be useful as well.
-Focus on actionable suggestions that the author could realistically implement.
 
 ## Submission Checklist
 
 - [x] Jupyter Notebook: `ml_regression_jballard.ipynb`
-- [x] Reflections: `Reflections.md`
+- [x] Reflections: `reflections.md`
 - [x] README: This file
 - [x] Dataset in `data/` folder
 - [x] Peer Review: `peer_review.md`
@@ -210,8 +159,7 @@ Focus on actionable suggestions that the author could realistically implement.
 
 ## Links
 
-- 📘 [Notebook Preview](ml-04-midterm-jballard.ipynb)  
-- ✍️ [Reflections (Markdown)](Reflections.md)  
-- 🧑‍🤝‍🧑 [Peer Review](peer_review.md)
-
----
+- [Notebook Preview](ml_regression_jballard.ipynb)
+- [Reflections.md](reflections.md)
+- [Peer Review](peer_review.md)
+- [Interactive Chart](https://jbtallgrass.github.io/ml_regression_jballard/model_performance_plot.html)
