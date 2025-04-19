@@ -99,7 +99,7 @@ I wanted to stretch my thinking but not overcomplicate things. Features like `bm
 
 #### Model Comparison and Metric Interpretation
 
-Balancing R², MAE, and RMSE wasn’t just about numbers—I wanted to *understand* what they meant. High-cost cases were still tricky, but this analysis helped me interpret the trade-offs clearly.
+Balancing R², MAE, and RMSE wasn’t just about numbers—I wanted to understand what they meant. High-cost cases were still tricky, but this analysis helped me interpret the trade-offs clearly.
 
 #### Building and Using Pipelines
 
@@ -113,7 +113,7 @@ Hosting the chart as an interactive page took some extra work. Setting up folder
 
 ### 6.3 If You Had More Time, What Would You Try Next?
 
-If I had more time, I’d reframe the problem as a classification task—maybe predicting whether charges exceed a certain threshold—and test models like logistic regression or random forests. I’d also keep experimenting. I tend to revisit earlier steps just to see what happens if I tweak something. That curiosity loop helps me understand *why* things work, not just whether they do.
+If I had more time, I’d reframe the problem as a classification task—maybe predicting whether charges exceed a certain threshold—and test models like logistic regression or random forests. I’d also keep experimenting. I tend to revisit earlier steps just to see what happens if I tweak something. That curiosity loop helps me understand why things work, not just whether they do.
 
 ---
 

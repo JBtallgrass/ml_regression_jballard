@@ -20,6 +20,24 @@ Explore my GitHub repository, [jbtallgrass](https://github.com/JBtallgrass?tab=r
 
 ---
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Dataset Used](#dataset-used)
+- [Project Findings](#project-findings)
+  - [Reflections Summary](#reflections-summary)
+  - [Model Performance Comparison](#model-performance-comparison)
+  - [Interactive Model Performance Chart](#interactive-model-performance-chart)
+- [Goals](#goals)
+- [Data Source](#data-source)
+- [Technologies Used](#technologies-used)
+- [Key Features](#key-features)
+- [Setup and Requirements](#setup-and-requirements)
+- [Project Structure](#project-structure)
+- [Final Overview: The Full Data Flow](#final-overview-the-full-data-flow)
+- [Submission Checklist](#submission-checklist)
+- [Links](#links)
+
 ---
 
 ## Project Overview
@@ -136,7 +154,7 @@ Data from Kaggle: [Medical Cost Personal Dataset](https://www.kaggle.com/miricho
 
 ### Peer Review
 
-Review a classmate’s repository and reflect on:
+Review a classmate's repository and reflect on:
 
 - Clarity & structure
 - Feature selection
