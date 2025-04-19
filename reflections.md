@@ -1,43 +1,61 @@
-# Refelections
+# Reflections
+
+---
 
 ## Reflection 1
 
-- _What do you notice about the dataset?_ The data set is clean with no missing values.  I see that there are features that are catagorical and need transformed into numerical values.
+- _What do you notice about the dataset?_  
+  The dataset is clean with no missing values. I noticed a few features are categorical and needed to be transformed into numerical values.
 
-- _Are there any data issues?_ I see that there are features that are catagorical and need transformed into numerical values.
+- _Are there any data issues?_  
+  While there weren't any missing values, transforming the categorical variables was necessary before modeling.
 
-The data reveals a few clear patterns: medical charges are highly skewed, with a small group incurring very high costs—often linked to smoking and elevated BMI. Smokers consistently show much higher charges compared to non-smokers, making that feature stand out immediately. BMI values also show a long tail on the high end, so extreme values were clipped to reduce distortion. Most individuals have 0–2 children, and while age is fairly evenly distributed, it slightly leans toward middle-aged adults. Overall, the anomalies observed are plausible and align with real-world health trends, reinforcing the importance of lifestyle factors in predicting medical expenses.
+The data reveals some clear patterns: medical charges are heavily skewed, with a small group incurring very high costs—often linked to smoking and elevated BMI. Smokers consistently show much higher charges compared to non-smokers, and BMI values show a long tail on the high end. Instead of removing outliers, I clipped BMI values to reduce distortion. Overall, the anomalies observed aligned with real-world health trends and reinforced the importance of lifestyle factors in predicting medical expenses.
+
+---
 
 ## Reflection 2
 
-- _What patterns or anomalies do you see?_
-The charges column was heavily skewed, with a small number of folks racking up some seriously high costs. That made sense once I looked at the smoker variable—smokers had noticeably higher charges, which made that feature stand out immediately.
+- _What patterns or anomalies do you see?_  
+  The `charges` column was heavily skewed. Smokers had noticeably higher costs, making that variable stand out. BMI also had outliers worth addressing.
 
-- Do any features stand out? What preprocessing steps were necessary to clean and improve the data? 
-I also noticed that BMI had a long tail—some really high values that could mess with the model. 
+- _What preprocessing steps were necessary?_  
+  Rather than dropping outliers, I clipped BMI between the 5th and 95th percentiles. I also log-transformed `charges` to reduce skew. This made the distribution more model-friendly while preserving key information.
 
-- Did you create or modify any features to improve performance?
-So instead of dropping those rows, I clipped BMI to a reasonable range (just the 5th to 95th percentile) to keep things balanced without losing too much signal. I used AI assistance to findd oput what to do with the BMI and charges.  Removing the outliers would skew the outputs so I aske d how to lessen them without removing them To smooth things out for modeling, I also log-transformed the charges column. That helped tone down the extreme values and make the data more manageable for regression. Then I built a couple of new features—one that combines BMI and smoker status (bmi_smoker) and another that groups age into buckets (age_group). Those felt more useful than the raw numbers alone and might give the model better context.
+- _Did you create or modify any features?_  
+  Yes, I created two engineered features:  
+  - `bmi_smoker`: to capture the compounded risk from high BMI and smoking.  
+  - `age_group`: to represent life stage segments.
+
+Using AI assistance helped me make informed decisions about handling outliers and balancing feature importance.
 
 ---
 
 ## Reflection 3
 
-Early in the project, I was concerned that outliers—especially in `charges` and `bmi`—might distort the model’s ability to make accurate predictions. Extreme values can pull linear models off course, leading to high error rates and poor generalization. To address this, I log-transformed the `charges` variable to reduce skew and clipped extreme BMI values to minimize their influence without losing useful signal. These steps helped stabilize the model and ensured it could better capture the trends in the majority of the data while still accounting for higher-risk individuals
+At first, I was concerned that outliers in `charges` and `bmi` would distort predictions. Extreme values can throw off linear models. To address this, I log-transformed `charges` and clipped high BMI values. These steps helped stabilize the model and allowed it to better reflect general trends while still accounting for high-risk groups.
 
-## Explorer Reflections – Feature Coefficients
+---
 
-After training the linear regression model, I reviewed the feature coefficients to understand how each input contributed to the predicted medical charges (in log scale). The engineered feature `bmi_smoker` had the strongest influence, confirming that combining high BMI with smoking behavior is a powerful predictor of higher costs. Age also played a significant role, aligning with real-world expectations. Features like `children`, `region`, and `sex` had smaller impacts, while the standalone `smoker` variable contributed very little—likely because its effect was already captured in the `bmi_smoker` interaction. Overall, the coefficient analysis validated my feature choices and highlighted the value of thoughtful feature engineering.
+## Explorer Reflection – Feature Coefficients
+
+After training the model, I reviewed the coefficients. The engineered `bmi_smoker` feature had the most impact, reinforcing how combining factors can enhance predictive power. Age was also influential, while features like `children`, `region`, and `sex` had smaller weights. Interestingly, the standalone `smoker` variable had minimal effect—its impact was likely captured through `bmi_smoker`. This confirmed that thoughtful feature engineering can reduce redundancy and improve clarity.
+
+---
 
 ## Reflection 4
 
-Overall, the model did a solid job. With an R² around 0.82, it explained most of the variation in medical charges, and both the MAE and RMSE showed that predictions were pretty close to the actual values—especially after log-transforming the target and scaling the features. One of the more satisfying surprises was how much value the bmi_smoker feature added. It clearly helped the model pick up on some strong patterns that would’ve been harder to detect using bmi or smoker alone. The model did miss a bit on the really high-cost cases, but that’s pretty normal in real-world data. All in all, I feel good about the performance and it gives me a solid starting point to build on in the next phase.
+The linear regression model performed well, with an R² around 0.82. The MAE and RMSE confirmed that predictions were fairly close to actual values. The `bmi_smoker` feature was especially effective, helping the model pick up on patterns that might’ve been missed otherwise. Like many real-world models, it struggled a bit with extreme cases, but the overall performance gave me a solid foundation for further exploration.
 
-### Explorer Reflections
+### Explorer Reflection – Residuals & Extras
 
-After running the initial model, I asked an AI assistant what else I could do in Section 4—and it led me to explore some really helpful extras. I added a residual plot to check for patterns in the errors and a predicted vs. actual plot to visually confirm how well the model was performing. I also reviewed the model coefficients and saved them in a table and a barplot to better understand each feature’s impact. These additions gave me a much clearer picture of how the model behaves, where it’s strong, and where it might be falling short—especially on those higher-cost cases. Definitely worth the extra steps.
+After checking in with an AI assistant, I explored residual plots, predicted vs. actual plots, and coefficient visualizations. These additions helped me better understand model performance and where it struggled—especially on high-cost cases. It also made the overall analysis more complete and informative.
 
+---
 
+## Reflection 5 – Model Performance Comparison
+
+As model complexity increased, so did performance. The manual linear regression gave me a baseline, Pipeline 1 improved it with imputation and scaling, and Pipeline 2 outperformed both with polynomial feature expansion. Scaling made a noticeable difference—it helped ensure balanced contributions from each feature and supported better convergence.
 
 ### 📊 Model Performance Comparison
 
@@ -51,4 +69,56 @@ After running the initial model, I asked an AI assistant what else I could do in
 
 ### 📊 Interactive Model Performance Chart
 
-👉 [Click here to explore the interactive chart](plots/model_performance_plot.html)
+👉 [![Model Performance](images/model_metrics_preview.png)](https://jbtallgrass.github.io/ml_regression_jballard/model_performance_plot.html)
+
+---
+
+### Explorer Reflection – GitHub Pages
+
+One of the best side quests was learning to host my interactive chart with GitHub Pages. After some trial and error, I exported the Plotly chart as an HTML file and configured the site to serve it from the `docs/` folder. It wasn’t seamless, but it was worth the effort. Now anyone can explore my results interactively, which feels like a meaningful upgrade in transparency and professionalism.
+
+---
+
+## Section 6 – Final Thoughts & Insights
+
+### 6.1 Summarize Findings
+
+This project started out simple: predict medical charges. But the deeper I got, the more I saw how each step—from data cleaning to feature engineering to pipeline design—really mattered. Combining BMI and smoker status into a single feature (`bmi_smoker`) made a big impact. Pipeline 2, which included polynomial features, performed the best, capturing the complex patterns I was aiming to uncover. Unsurprisingly, high BMI and smoking were big cost drivers. Overall, it was rewarding to see how each modeling improvement made a measurable difference.
+
+---
+
+### 6.2 Discuss Challenges Faced
+
+#### Handling Skewed and Outlier-Heavy Data
+
+The skewed `charges` column and extreme BMI values posed a challenge. Log-transforming the target and clipping BMI helped stabilize the data. I also learned (after the fact) that pipelines could’ve handled some of this more efficiently—I created extra work, but I learned from it.
+
+#### Feature Engineering Without Overfitting
+
+I wanted to stretch my thinking but not overcomplicate things. Features like `bmi_smoker` and `age_group` added depth, and I used feature importance scores to validate my work.
+
+#### Model Comparison and Metric Interpretation
+
+Balancing R², MAE, and RMSE wasn’t just about numbers—I wanted to *understand* what they meant. High-cost cases were still tricky, but this analysis helped me interpret the trade-offs clearly.
+
+#### Building and Using Pipelines
+
+I treated each pipeline like its own little project at first. Eventually, I realized I was repeating myself and needed a better structure. Once I got the order of operations right, it all clicked.
+
+#### The GitHub Pages “Side Quest”
+
+Hosting the chart as an interactive page took some extra work. Setting up folders, configuring deployment—it was a bit of a rabbit hole, but now I know how to do it. Worth it.
+
+---
+
+### 6.3 If You Had More Time, What Would You Try Next?
+
+If I had more time, I’d reframe the problem as a classification task—maybe predicting whether charges exceed a certain threshold—and test models like logistic regression or random forests. I’d also keep experimenting. I tend to revisit earlier steps just to see what happens if I tweak something. That curiosity loop helps me understand *why* things work, not just whether they do.
+
+---
+
+### 6.4 What Did You Learn from This Project and the Extra Explorations?
+
+This project helped me connect theory to practice in a hands-on, iterative way. I didn’t just build models—I learned how every part of the process, from scaling to engineering, shapes the outcome. I explored new tools like pipelines and GitHub Pages, and pushed myself to visualize, interpret, and explain the results clearly. Most of all, I learned the value of circling back. Every time I tried something new—whether it worked or not—I came away with a deeper understanding. That’s where the real learning happened.
+
+---

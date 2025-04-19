@@ -33,6 +33,15 @@ I invite you to explore my GitHub repository, [jbtallgrass](https://github.com/J
 
 ---
 
+## ⚡ TL;DR
+
+- 🔍 Goal: Predict medical charges based on personal and lifestyle factors.
+- 🛠️ Tools: Python, Pandas, Scikit-Learn, Plotly, GitHub Pages.
+- 🔬 Process: Cleaned and explored the data, engineered features, built and compared regression models (manual, pipeline, and polynomial).
+- 📈 Best Model: Pipeline 2 (Polynomial Regression) achieved the highest R² and lowest error.
+- 📊 Visualization: Static and interactive charts comparing model performance.
+- 🌐 Bonus: Hosted the interactive Plotly chart via GitHub Pages to make results explorable.
+
 ## 📚 Table of Contents
 
 - [Applied Machine Learning Final](#applied-machine-learning-final)
@@ -43,10 +52,12 @@ I invite you to explore my GitHub repository, [jbtallgrass](https://github.com/J
     - [Jason Ballard](#jason-ballard)
       - [Basehor, Kansas (CDT)](#basehor-kansas-cdt)
       - [April 16, 2025](#april-16-2025)
+  - [⚡ TL;DR](#-tldr)
   - [📚 Table of Contents](#-table-of-contents)
   - [Project Overview](#project-overview)
   - [Dataset Used](#dataset-used)
   - [Project Findings](#project-findings)
+    - [Reflections Summary](#reflections-summary)
     - [📊 Model Performance Comparison](#-model-performance-comparison)
       - [📊 Interactive Model Performance Chart](#-interactive-model-performance-chart)
   - [Goals](#goals)
@@ -89,11 +100,15 @@ Why:
 
 Please refer to the detailed [Reflections.md](reflections.md) for section-based insights, observations, and reflections captured throughout the modeling process.
 
-Summarize reflections HERE
+### Reflections Summary
+
+This project pushed me to move beyond basic model-building and really explore how thoughtful preprocessing, feature engineering, and evaluation shape the outcome. I started with a clean dataset and gradually refined my approach—clipping outliers, log-transforming skewed variables, scaling features, and creating new ones like `bmi_smoker` to reflect real-world health risks. Each step added something valuable, and I saw measurable improvements in performance. Pipeline 2, which included polynomial features, gave the strongest results—proving that complexity can pay off when applied with purpose.
+
+Beyond the modeling itself, I leaned into experimentation and exploration. I circled back to tweak, re-run, and test new ideas constantly. One of my favorite side quests was setting up GitHub Pages to host an interactive Plotly chart—a first for me, and a big step in sharing my work in a more engaging way. I learned that good machine learning isn’t just about algorithms—it’s about asking better questions, visualizing outcomes, and communicating insights clearly.
 
 ### 📊 Model Performance Comparison
 
-![Model Performance Comparision](plots\overlayed_model_performance.png)
+![Model Performance Comparision](images\overlayed_model_performance.png)
 
 | Model                              | R² Score | MAE       | RMSE      |
 |-----------------------------------|----------|-----------|-----------|
@@ -103,7 +118,7 @@ Summarize reflections HERE
 
 #### 📊 Interactive Model Performance Chart
 
-👉 [Interactive Dashboard](https://.github.io/your-repo/model_performance_plot.html)
+👉 [![Model Performance](images/model_metrics_preview.png)](https://jbtallgrass.github.io/ml_regression_jballard/model_performance_plot.html)
 
 ---
 
