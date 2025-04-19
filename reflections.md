@@ -39,10 +39,9 @@ After running the initial model, I asked an AI assistant what else I could do in
 
 
 
-
-
-
 ### 📊 Model Performance Comparison
+
+![Model Comparison](images/overlayed_model_performance.png)
 
 | Model                              | R² Score | MAE       | RMSE      |
 |-----------------------------------|----------|-----------|-----------|
