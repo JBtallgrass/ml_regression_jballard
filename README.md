@@ -47,6 +47,7 @@ I invite you to explore my GitHub repository, [jbtallgrass](https://github.com/J
   - [Project Overview](#project-overview)
   - [Dataset Used](#dataset-used)
   - [Project Findings](#project-findings)
+    - [📊 Model Performance Comparison](#-model-performance-comparison)
   - [Goals](#goals)
   - [Data Source](#data-source)
   - [Technologies Used](#technologies-used)
@@ -86,6 +87,16 @@ Why:
 ## Project Findings
 
 Please refer to the detailed [Reflections.md](reflections.md) for section-based insights, observations, and reflections captured throughout the modeling process.
+
+Summarize reflections HERE
+
+### 📊 Model Performance Comparison
+
+| Model                              | R² Score | MAE       | RMSE      |
+|-----------------------------------|----------|-----------|-----------|
+| Manual Linear Regression           | 0.8200   | 3500.12   | 4700.45   |
+| Linear Regression (Pipeline 1)     | 0.8400   | 3300.78   | 4400.29   |
+| Polynomial Regression (Pipeline 2) | 0.8800   | 3100.45   | 4200.67   |
 
 ---
 
