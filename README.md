@@ -35,27 +35,35 @@ I invite you to explore my GitHub repository, [jbtallgrass](https://github.com/J
 
 ## 📚 Table of Contents
 
-- [Project Overview](#project-overview)
-- [Dataset Used](#dataset-used)
-- [Project Findings](#project-findings)
-- [Goals](#goals)
-- [Data Source](#data-source)
-- [Technologies Used](#technologies-used)
-- [Key Features](#key-features)
-- [Setup and Requirements](#setup-and-requirements)
-- [Project Structure](#project-structure)
-- [Final Overview: The Full Data Flow](#final-overview-the-full-data-flow)
-- [Submission Checklist](#submission-checklist)
-- [Links](#links)
+- [Applied Machine Learning Final](#applied-machine-learning-final)
+  - [🧑‍💼 Jason A. Ballard](#-jason-a-ballard)
+    - [Instructional Systems Specialist | Data Scientist | Data and AI Officer | Data Literacy Advocate | Educator in Professional Military Education](#instructional-systems-specialist--data-scientist--data-and-ai-officer--data-literacy-advocate--educator-in-professional-military-education)
+    - [🔑 Key Areas of Focus](#-key-areas-of-focus)
+  - [Applied Machine Learning Final Project: Regression Analysis](#applied-machine-learning-final-project-regression-analysis)
+    - [Jason Ballard](#jason-ballard)
+      - [Basehor, Kansas (CDT)](#basehor-kansas-cdt)
+      - [April 16, 2025](#april-16-2025)
+  - [📚 Table of Contents](#-table-of-contents)
+  - [Project Overview](#project-overview)
+  - [Dataset Used](#dataset-used)
+  - [Project Findings](#project-findings)
+  - [Goals](#goals)
+  - [Data Source](#data-source)
+  - [Technologies Used](#technologies-used)
+  - [Key Features](#key-features)
+  - [Setup and Requirements](#setup-and-requirements)
+  - [Project Structure](#project-structure)
+  - [Final Overview: The Full Data Flow](#final-overview-the-full-data-flow)
+    - [Assignment Requirements](#assignment-requirements)
+    - [Peer Review (Required)](#peer-review-required)
+  - [Submission Checklist](#submission-checklist)
+  - [Links](#links)
 
 ---
 
 ## Project Overview
 
-Project Title: PricePoint: A Machine Learning Approach to Predicting Housing Prices with Feature-Rich Regression Models
-
-Develop and evaluate regression models to predict the sale price of houses using features such as location, size, and year built. The goal is to assess which models generalize best and to interpret which features most influence housing value.
-
+Project Title:
 This project demonstrates my ability to apply regression modeling techniques to a real-world dataset. I will load:
 
 - Load and explore a dataset.
@@ -69,13 +77,9 @@ This project demonstrates my ability to apply regression modeling techniques to 
 
 ## Dataset Used
 
-🥇 🏡 Housing Prices Dataset
+🥇 🏡
 
-Housing Prices Dataset (Predict home values based on features like square footage and location)
-
-- [Kaggle Housing Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
-
-Why: It provides the richest feature set, requires robust preprocessing, and allows you to explore regularization, ensembling, and interpretability. It mirrors the messiness and opportunities you'd face in real-world applied machine learning.
+Why:
 
 ---
 
@@ -90,10 +94,6 @@ Please refer to the detailed [Reflections.md](reflections.md) for section-based 
 ---
 
 ## Data Source
-
-- **Housing Prices Dataset** (Predict home values based on features like square footage and location)
-
-- [Kaggle Housing Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
 
 ---
 
